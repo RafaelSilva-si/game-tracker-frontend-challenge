@@ -6,12 +6,15 @@ const { label, handleChange, value } = defineProps([
   'handleChange',
   'value',
 ])
+
+console.log(value)
 </script>
 
 <template>
   <div class="selectWrapper">
     <label v-if="label">{{ label }}:</label>
     <select @change="handleChange" :value="value">
+      <option value="0" selected disabled>Selecione...</option>
       <slot></slot>
     </select>
   </div>

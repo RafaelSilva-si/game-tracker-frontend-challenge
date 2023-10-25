@@ -69,7 +69,7 @@ const handleSortBy = (sortBy: string) => {
       />
       <CustomSelect
         :label="'Ordernar por'"
-        :value="currentQuery.sortBy || ''"
+        :value="currentQuery.sortBy || 0"
         :handleChange="(e: any) => handleSortBy(e.target.value)"
       >
         <option value="savings">% de Desconto</option>
