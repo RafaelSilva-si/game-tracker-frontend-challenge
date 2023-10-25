@@ -8,16 +8,7 @@ import Button from '../components/ui-components/Button.vue'
 import CustomInput from '../components/ui-components/CustomInput.vue'
 import CustomSelect from '../components/ui-components/CustomSelect.vue'
 import Loading from '../components/ui-components/icons/Loading.vue'
-
-interface GameDeal {
-  internalName: string
-  title: string
-  dealID: string
-  salePrice: string
-  normalPrice: string
-  savings: string
-  thumb: string
-}
+import { GameDeal } from '../utils/interfaces/deals'
 
 let Deals = ref<GameDeal[]>([])
 
