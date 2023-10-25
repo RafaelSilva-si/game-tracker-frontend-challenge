@@ -29,7 +29,7 @@ header {
 
 @media (min-width: 768px) {
   .container {
-    max-width: 860px;
+    max-width: 960px;
     & > * {
       display: flex;
       justify-content: start;
@@ -37,7 +37,7 @@ header {
   }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1024px) {
   .container {
     max-width: 1080px;
     & > * {
