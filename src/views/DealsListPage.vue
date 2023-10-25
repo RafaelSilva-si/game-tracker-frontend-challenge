@@ -8,6 +8,7 @@ import DealsCard from '../components/ui-components/DealsCard.vue'
 import Button from '../components/ui-components/Button.vue'
 import CustomInput from '../components/ui-components/CustomInput.vue'
 import CustomSelect from '../components/ui-components/CustomSelect.vue'
+import Loading from '../components/ui-components/icons/Loading.vue'
 
 let Deals = ref<GameDeal[]>([])
 
@@ -71,6 +72,9 @@ const handleSortBy = (sortBy: string) => {
     <div class="list">
       <DealsCard v-for="deal in Deals" :key="deal.gameID" :deal="deal" />
     </div>
+    <div v-if="store.state.deals.loading" class="loading">
+      <Loading />
+    </div>
     <Button
       :label="'Carregar mais'"
       :onClick="handlePage"
@@ -106,6 +110,10 @@ nav {
   gap: 24px;
 }
 
+.loading {
+  width: 100px;
+  margin: 0 auto;
+}
 @media (min-width: 768px) {
   main {
     width: 960px;
