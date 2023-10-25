@@ -1,12 +1,16 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import App from '../App.vue'
+import DealsListPage from '../views/DealsListPage.vue'
 
 export default createRouter({
     history: createWebHistory(),
     routes: [
         {
             path: '/',
-            component: App,
+            component: DealsListPage,
+        },
+        {
+            path: '/teste',
+            component: DealsListPage,
         },
     ],
 })
