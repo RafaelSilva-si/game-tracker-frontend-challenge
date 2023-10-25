@@ -1,13 +1,17 @@
 <script setup lang="ts">
 import { defineProps } from 'vue'
 
-const { label, handleChange } = defineProps(['label', 'handleChange'])
+const { label, handleChange, value } = defineProps([
+  'label',
+  'handleChange',
+  'value',
+])
 </script>
 
 <template>
   <div class="selectWrapper">
     <label v-if="label">{{ label }}:</label>
-    <select @change="handleChange">
+    <select @change="handleChange" :value="value">
       <slot></slot>
     </select>
   </div>

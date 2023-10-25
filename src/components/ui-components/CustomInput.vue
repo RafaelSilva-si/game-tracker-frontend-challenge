@@ -1,12 +1,17 @@
 <script setup lang="ts">
 import { defineProps } from 'vue'
 
-const { label, onChange } = defineProps(['label', 'onChange'])
+const { label, onChange, value } = defineProps(['label', 'onChange', 'value'])
 </script>
 
 <template>
   <div class="search-input">
-    <input :placeholder="label" @keydown.enter="onChange" @blur="onChange" />
+    <input
+      :placeholder="label"
+      @keydown.enter="onChange"
+      @blur="onChange"
+      :value="value"
+    />
     <div class="search-icon">
       <img src="../../assets/imgs/search_24px_outlined.svg" alt="Search Icon" />
     </div>
