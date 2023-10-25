@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import DealsListPage from '../views/DealsListPage.vue'
+import ErrorPage from '../views/ErrorPage.vue'
 
 export default createRouter({
     history: createWebHistory(),
@@ -9,8 +10,8 @@ export default createRouter({
             component: DealsListPage,
         },
         {
-            path: '/teste',
-            component: DealsListPage,
+            path: '/error',
+            component: ErrorPage,
         },
     ],
 })
