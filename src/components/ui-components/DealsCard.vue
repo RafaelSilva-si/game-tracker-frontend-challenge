@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { GameDeal } from '../utils/interfaces/deals'
+import { GameDeal } from '../../utils/interfaces/deals'
 
 defineProps<{ deal: GameDeal }>()
 </script>
