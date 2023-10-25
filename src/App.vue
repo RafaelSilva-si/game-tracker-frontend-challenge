@@ -28,7 +28,7 @@ const handlePage = (page: string) => {
 
 const handleTitle = (title: string) => {
   currentQuery.title = title;
-  router.push({ query: currentQuery });
+  router.push(`?title=${title}`);
 }
 
 const handleSortBy = (sortBy: string) => {
@@ -39,9 +39,14 @@ const handleSortBy = (sortBy: string) => {
 </script>
 
 <template>
-  <button @click="handlePage('2')">Teste 1</button>
+  <button @click="handlePage('2')">Pagina 2</button>
+  <button @click="handlePage('3')">Pagina 3</button>
+  <button @click="handlePage('4')">Pagina 4</button>
   <button @click="handleTitle('Farm')">Teste 2</button>
-  <button @click="handleSortBy('Farm')">Teste 3</button>
+  <button @click="handleSortBy('Price')">Teste 3</button>
+  <p v-for="deals in Deals">
+    {{ deals.title }}
+  </p>
 </template>
 
 <style scoped></style>
