@@ -23,7 +23,7 @@ const savings = computed(() => {
     />
     <img
       v-if="!deal.thumb"
-      src="../assets/imgs/logo.png"
+      src="/imgs/logo.png"
       :alt="`Thumb do jogo ${deal.title}`"
     />
     <div class="infoWrapper">

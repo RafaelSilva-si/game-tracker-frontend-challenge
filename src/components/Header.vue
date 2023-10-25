@@ -4,7 +4,7 @@
   <header>
     <div class="container">
       <RouterLink to="/">
-        <img src="../assets/imgs/logo.png" alt="Logo Game Tracker" />
+        <img src="/imgs/logo.png" alt="Logo Game Tracker" />
       </RouterLink>
     </div>
   </header>

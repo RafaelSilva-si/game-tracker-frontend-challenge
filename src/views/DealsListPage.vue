@@ -3,18 +3,27 @@ import { onMounted, ref, watch } from 'vue'
 import { useStore } from 'vuex'
 import { useRouter } from 'vue-router'
 
-import { GameDeal } from './utils/interfaces/deals'
 import DealsCard from '../components/ui-components/DealsCard.vue'
 import Button from '../components/ui-components/Button.vue'
 import CustomInput from '../components/ui-components/CustomInput.vue'
 import CustomSelect from '../components/ui-components/CustomSelect.vue'
 import Loading from '../components/ui-components/icons/Loading.vue'
 
+interface GameDeal {
+  internalName: string
+  title: string
+  dealID: string
+  salePrice: string
+  normalPrice: string
+  savings: string
+  thumb: string
+}
+
 let Deals = ref<GameDeal[]>([])
 
 const store = useStore()
 const router = useRouter()
-const currentQuery = { ...router.currentRoute.value.query }
+const currentQuery: any = { ...router.currentRoute.value.query }
 
 onMounted(async () => {
   await store.dispatch('deals/fetchData', {
@@ -70,7 +79,7 @@ const handleSortBy = (sortBy: string) => {
       </CustomSelect>
     </nav>
     <div class="list">
-      <DealsCard v-for="deal in Deals" :key="deal.gameID" :deal="deal" />
+      <DealsCard v-for="deal in Deals" :key="deal.dealID" :deal="deal" />
     </div>
     <p v-if="Deals.length <= 0">
       Desculpe, não foram encontrados resultados para a sua pesquisa.
