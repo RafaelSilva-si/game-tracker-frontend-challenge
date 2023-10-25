@@ -72,6 +72,9 @@ const handleSortBy = (sortBy: string) => {
     <div class="list">
       <DealsCard v-for="deal in Deals" :key="deal.gameID" :deal="deal" />
     </div>
+    <p v-if="Deals.length <= 0">
+      Desculpe, não foram encontrados resultados para a sua pesquisa.
+    </p>
     <div v-if="store.state.deals.loading" class="loading">
       <Loading />
     </div>
