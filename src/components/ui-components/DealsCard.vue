@@ -29,7 +29,7 @@ const savings = computed(() => {
     <div class="infoWrapper">
       <h2 class="title">{{ deal.title }}</h2>
       <div class="info">
-        <RouterLink to="/">
+        <RouterLink :to="`/deals-details?dealsID=${deal.dealID}`">
           <p class="detailsButton">Detalhes</p>
         </RouterLink>
         <div class="priceInfo">
@@ -109,7 +109,7 @@ img {
 }
 
 .savingsButton {
-  background-color: rgba(22, 133, 123, 1);
+  background-color: var(--tertiary-color);
   padding: 5px 15px;
   font-size: 18px;
   font-weight: 500;
