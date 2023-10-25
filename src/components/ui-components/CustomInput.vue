@@ -13,7 +13,7 @@ const { label, onChange, value } = defineProps(['label', 'onChange', 'value'])
       :value="value"
     />
     <div class="search-icon">
-      <img src="../../assets/imgs/search_24px_outlined.svg" alt="Search Icon" />
+      <img src="/imgs/search_24px_outlined.svg" alt="Search Icon" />
     </div>
   </div>
 </template>

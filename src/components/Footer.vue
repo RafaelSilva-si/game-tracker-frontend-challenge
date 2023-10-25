@@ -4,7 +4,7 @@
   <footer>
     <div class="container">
       <a href="/" class="logo-footer">
-        <img src="../assets/imgs/logo-small.png" alt="Logo Game Tracker" />
+        <img src="/imgs/logo-small.png" alt="Logo Game Tracker" />
       </a>
       <p>
         © 2021, Game Tracker Inc. Todos os direitos reservados. Nulla facilisi.
