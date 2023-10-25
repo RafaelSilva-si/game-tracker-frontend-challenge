@@ -1,0 +1,7 @@
+version: '1'
+
+services:
+  promobit-frontend-challenge:
+    image: gordinhodo/game-tracker-frontend
+    ports:
+      - "8080:8080"
