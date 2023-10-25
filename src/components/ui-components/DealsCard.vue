@@ -1,7 +1,17 @@
 <script setup lang="ts">
+import { computed } from 'vue'
 import { GameDeal } from '../../utils/interfaces/deals'
 
-defineProps<{ deal: GameDeal }>()
+const props = defineProps<{ deal: GameDeal }>()
+
+const savings = computed(() => {
+  if (props.deal.savings) {
+    let value = parseInt(props.deal.savings)
+    return value === 100 ? 'Gratis' : -value + '%'
+  } else {
+    return ''
+  }
+})
 </script>
 
 <template>
@@ -27,7 +37,7 @@ defineProps<{ deal: GameDeal }>()
             <p class="normalPrice">$ {{ deal.normalPrice }}</p>
             <p class="salePrice">$ {{ deal.salePrice }}</p>
           </div>
-          <p class="savingsButton">-12%</p>
+          <p class="savingsButton">{{ savings }}</p>
         </div>
       </div>
     </div>
