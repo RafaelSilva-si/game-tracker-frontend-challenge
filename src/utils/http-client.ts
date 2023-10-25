@@ -1,7 +1,7 @@
 import axios, { AxiosInstance, InternalAxiosRequestConfig } from "axios";
 
 const HTTPInstance: AxiosInstance = axios.create({
-    baseURL: 'https://www.cheapshark.com/api/1.0/',
+    baseURL: import.meta.env.VITE_URL_API
 });
 
 HTTPInstance.interceptors.request.use((config: InternalAxiosRequestConfig) => {
