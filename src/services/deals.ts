@@ -11,5 +11,8 @@ export default {
         };
 
         return HTTPInstance.get('deals', { params: queryParams })
+    },
+    fetchDealsById: (params: { dealsID: string }) => {
+        return HTTPInstance.get('deals', { params: { id: params.dealsID } })
     }
 }
