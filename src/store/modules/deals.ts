@@ -3,7 +3,6 @@ import { useRouter } from 'vue-router';
 
 import deals from "../../services/deals";
 
-
 export default {
     namespaced: true,
     state: {
@@ -48,7 +47,6 @@ export default {
                 try {
                     commit('SET_LOADING', true);
                     const response = await deals.fetchDealsById(params);
-                    console.log(response)
                     commit('SET_DEAL', response.data);
                     commit('SET_LOADING', false);
                 } catch (error) {
