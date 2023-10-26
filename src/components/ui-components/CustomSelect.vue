@@ -6,8 +6,6 @@ const { label, handleChange, value } = defineProps([
   'handleChange',
   'value',
 ])
-
-console.log(value)
 </script>
 
 <template>

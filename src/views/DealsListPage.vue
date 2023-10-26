@@ -3,12 +3,14 @@ import { onMounted, ref, watch } from 'vue'
 import { useStore } from 'vuex'
 import { useRouter } from 'vue-router'
 
-import DealsCard from '../components/ui-components/DealsCard.vue'
-import Button from '../components/ui-components/Button.vue'
-import CustomInput from '../components/ui-components/CustomInput.vue'
-import CustomSelect from '../components/ui-components/CustomSelect.vue'
-import Loading from '../components/ui-components/icons/Loading.vue'
 import { GameDeal } from '../utils/interfaces/deals'
+import {
+  Button,
+  CustomInput,
+  CustomSelect,
+  DealsCard,
+  Loading,
+} from '../components'
 
 let Deals = ref<GameDeal[]>([])
 
