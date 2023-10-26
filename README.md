@@ -36,7 +36,7 @@ O desafio consistiu em criar um projeto Vue que consome dados de [Cheap Shark AP
 * [x] O usuário deve conseguir voltar para a página de listagem de filmes com os filtros ainda ativos
 
 ## Decisões Tecnicas
-   * Optei por implementar os filtros na URL em vez de manter o estado interno da aplicação. Dessa forma, os usuários terão a vantagem de ter um histórico de navegação mais claro e direto. Cada filtro aplicado será refletido na própria URL, o que facilita a compreensão e a navegação entre diferentes visualizações de filmes. Além disso, essa abordagem torna mais fácil compartilhar links específicos ou salvar determinadas configurações para referência futura.
+   * Optei por implementar os filtros na URL em vez de manter o estado interno da aplicação. Dessa forma, os usuários terão a vantagem de ter um histórico de navegação mais claro e direto. Cada filtro aplicado será refletido na própria URL, o que facilita a compreensão e a navegação entre diferentes visualizações de ofertas. Além disso, essa abordagem torna mais fácil compartilhar links específicos ou salvar determinadas configurações para referência futura.
      
 ### Tecnologias
 * Vuex: Escolhi Vuex para gerenciar o estado da aplicação de forma centralizada, facilitando o compartilhamento de dados entre componentes e garantindo uma gestão eficiente do estado da aplicação.
