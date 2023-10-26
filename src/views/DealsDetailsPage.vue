@@ -20,9 +20,9 @@ onMounted(async () => {
 
 <template>
   <main>
-    <div class="container">
+    <section class="container">
       <DealsScreen :deal="Deal" :deal-id="currentQuery.dealsID" v-if="Deal" />
-    </div>
+    </section>
   </main>
 </template>
 

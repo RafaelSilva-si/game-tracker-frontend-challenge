@@ -15,7 +15,7 @@ const savings = computed(() => {
 </script>
 
 <template>
-  <div class="card">
+  <li class="card">
     <img
       v-if="deal.thumb"
       :src="deal.thumb"
@@ -26,9 +26,11 @@ const savings = computed(() => {
       src="/imgs/logo.png"
       :alt="`Thumb do jogo ${deal.title}`"
     />
-    <div class="infoWrapper">
-      <h2 class="title">{{ deal.title }}</h2>
-      <div class="info">
+    <section class="infoWrapper">
+      <header>
+        <h2 class="title">{{ deal.title }}</h2>
+      </header>
+      <section class="info">
         <RouterLink :to="`/deals-details?dealsID=${deal.dealID}`">
           <p class="detailsButton">Detalhes</p>
         </RouterLink>
@@ -39,9 +41,9 @@ const savings = computed(() => {
           </div>
           <p class="savingsButton">{{ savings }}</p>
         </div>
-      </div>
-    </div>
-  </div>
+      </section>
+    </section>
+  </li>
 </template>
 
 <style scoped>

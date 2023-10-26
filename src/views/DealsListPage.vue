@@ -71,9 +71,9 @@ const handleSortBy = (sortBy: string) => {
         <option value="title">Título</option>
       </CustomSelect>
     </nav>
-    <div class="list">
+    <ul class="list">
       <DealsCard v-for="deal in Deals" :key="deal.dealID" :deal="deal" />
-    </div>
+    </ul>
     <p v-if="Deals.length <= 0">
       Desculpe, não foram encontrados resultados para a sua pesquisa.
     </p>
