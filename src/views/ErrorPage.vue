@@ -2,7 +2,7 @@
 
 <template>
   <main>
-    <img src="/imgs/internal-error.png" />
+    <img src="/imgs/internal-error.png" alt="Internal server error" />
     <h2>Opss, algo de errado aconteceu!</h2>
     <p>
       Desculpe-nos, ocorreu um erro interno no servidor. Nossa equipe técnica já
