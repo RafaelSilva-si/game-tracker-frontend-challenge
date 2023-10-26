@@ -42,12 +42,14 @@ const handlePage = () => {
 
 const handleTitle = (title: string) => {
   currentQuery.title = title
-  router.push(`?title=${title}`)
+  currentQuery.page = null
+  router.push({ query: currentQuery })
 }
 
 const handleSortBy = (sortBy: string) => {
   currentQuery.sortBy = sortBy
-  router.push(`?sortBy=${sortBy}`)
+  currentQuery.page = null
+  router.push({ query: currentQuery })
 }
 </script>
 
