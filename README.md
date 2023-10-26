@@ -5,7 +5,8 @@
 
 > Status: Finished :white_check_mark:
 
-<img width="946" alt="image" src="https://github.com/RafaelSilva-si/game-tracker-frontend-challenge/assets/77937182/6df3a1ab-49c9-475c-9de5-e62b6c203ee4">
+<img width="944" alt="image" src="https://github.com/RafaelSilva-si/game-tracker-frontend-challenge/assets/77937182/518100eb-d9d9-4122-a297-108317d86cb2">
+
 
 ## O desafio
 
