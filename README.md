@@ -48,7 +48,7 @@ O desafio consistiu em criar um projeto Vue que consome dados de [Cheap Shark AP
 * Axios: Optei pelo Axios como cliente HTTP por ser uma biblioteca simples e eficiente, facilitando as requisições e o tratamento de dados provenientes da API.
   
 ## Instalação com Docker
-
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 1. Clone o repositório.
 2. Navegue até o diretório do projeto.
 3. Em um terminal rode o comando `docker compose -f docker-compose.yml up`
