@@ -2,7 +2,7 @@
 
 <template>
   <main>
-    <h1>500 <span>Server Error</span></h1>
+    <img src="/imgs/internal-error.png" />
     <h2>Opss, algo de errado aconteceu!</h2>
     <p>
       Desculpe-nos, ocorreu um erro interno no servidor. Nossa equipe técnica já
@@ -14,24 +14,17 @@
 
 <style scoped>
 main {
-  max-width: 500px;
+  max-width: 800px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 5%;
+  padding: 4%;
 }
 
-h1 {
-  color: white;
-  font-size: 4rem;
-  font-weight: 300;
-}
-
-h1 span {
-  color: var(--primary-color);
-  font-weight: 500;
-  font-size: 2rem;
+img {
+  width: 300px;
+  height: 300px;
 }
 
 h2 {
