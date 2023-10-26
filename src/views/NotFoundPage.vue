@@ -2,13 +2,9 @@
 
 <template>
   <main>
-    <img src="/imgs/page-not-found.png" />
+    <img src="/imgs/page-not-found.png" alt="Page Not Found" />
     <h2>Opss, página não foi encontrada</h2>
-    <p>
-      Desculpe-nos, ocorreu um erro interno no servidor. Nossa equipe técnica já
-      foi notificada e está trabalhando para resolver o problema. Por favor,
-      tente novamente mais tarde. Agradecemos sua compreensão.
-    </p>
+    <p>A página que você está tentando acessar não foi encontrada.</p>
   </main>
 </template>
 
