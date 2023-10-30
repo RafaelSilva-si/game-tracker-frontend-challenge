@@ -5,7 +5,8 @@
 
 > Status: Finished :white_check_mark:
 
-<img width="946" alt="image" src="https://github.com/RafaelSilva-si/game-tracker-frontend-challenge/assets/77937182/6df3a1ab-49c9-475c-9de5-e62b6c203ee4">
+<img width="944" alt="image" src="https://github.com/RafaelSilva-si/game-tracker-frontend-challenge/assets/77937182/518100eb-d9d9-4122-a297-108317d86cb2">
+
 
 ## O desafio
 
@@ -16,24 +17,22 @@ O desafio consistiu em criar um projeto Vue que consome dados de [Cheap Shark AP
 ## Requisitos funcionais
 
 * [x] O usuário deve ter acesso a uma listagem das melhores ofertas de jogos.
-
 * [x] O usuário deve conseguir paginar a lista para encontrar novas ofertas.
-
 * [x] O usuário deve ter acesso a uma outra página com detalhes sobre a oferta, ao clicar em um item na listagem
 
 ## Requisitos não funcionais
 
 * [x] A aplicação deve ser desenvolvida utilizando Vue.js.
-
 * [x] O layout e design da aplicação devem ser estritamente baseados no Figma.
-
 * [x] A aplicação deve ser responsiva, garantindo uma experiência de usuário consistente em diferentes dispositivos.
 
-## Extras
+## Extras e Diferenciais
 
+* [x] O usuário deve ter feedback caso a página não exista, ou retorne erro.
 * [x] O usuário deve conseguir filtrar as ofertas ordenadas, com a possibilidade de trocar a forma de ordenar.
 * [x] O usuário deve conseguir remover filtros e a listagem deve ser atualizada de acordo com o filtro removido
 * [x] O usuário deve conseguir voltar para a página de listagem de ofertas com os filtros ainda ativos
+
 
 ## Decisões Tecnicas
    * Optei por implementar os filtros na URL em vez de manter o estado interno da aplicação. Dessa forma, os usuários terão a vantagem de ter um histórico de navegação mais claro e direto. Cada filtro aplicado será refletido na própria URL, o que facilita a compreensão e a navegação entre diferentes visualizações de ofertas. Além disso, essa abordagem torna mais fácil compartilhar links específicos ou salvar determinadas configurações para referência futura.
