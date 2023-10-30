@@ -10,7 +10,7 @@
 
 ## O desafio
 
-[LIVE - acesse aqui](https://game-tracker-frontend-challenge-jyoimja99-rafaelsilva-si.vercel.app/)
+[LIVE - acesse aqui](https://game-tracker-frontend-challenge.vercel.app/)
 <br>
 O desafio consistiu em criar um projeto Vue que consome dados de [Cheap Shark API](https://apidocs.cheapshark.com/) e os exibe de forma organizada na interface do usuário de acordo com o [layout do figma](https://www.figma.com/file/1OChnhd0T3HQdGP1TWHNbX/Game-Tracker-Prot%C3%B3tipo?node-id=0-1&t=Ogvtm7mrA87GFhry-0). O projeto incorpora recursos como filtros para refinar os dados apresentados. Além disso, foram implementados tratamentos para lidar com possíveis erros provenientes da API e para garantir uma experiência de usuário sem interrupções. O código também inclui validações para lidar com dados que possam estar ausentes ou ser nulos, garantindo uma apresentação limpa e coerente na interface do aplicativo.
 
