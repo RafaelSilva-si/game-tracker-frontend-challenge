@@ -6,6 +6,7 @@ describe('Deals list Page', function(){
     })
 
     it('Garantir que o input de Pesquisa esteja funcionando corretamente', function(){
+        
         cy.get('input[name="search-input"]')
             .should('be.visible')
             .type('Teste')
