@@ -7,6 +7,7 @@ const { label, onChange, value } = defineProps(['label', 'onChange', 'value'])
 <template>
   <div class="search-input">
     <input
+      name="search-input"
       :placeholder="label"
       @keydown.enter="onChange"
       @blur="onChange"

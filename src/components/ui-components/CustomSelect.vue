@@ -11,7 +11,7 @@ const { label, handleChange, value } = defineProps([
 <template>
   <div class="selectWrapper">
     <label v-if="label">{{ label }}:</label>
-    <select @change="handleChange" :value="value">
+    <select @change="handleChange" :value="value" name="select-order">
       <option value="0" selected disabled>Selecione...</option>
       <slot></slot>
     </select>
