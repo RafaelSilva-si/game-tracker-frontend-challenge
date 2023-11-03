@@ -10,4 +10,3 @@ jobs:
         uses: cypress-io/github-action@v2
         with:
           start: yarn dev
-          wait-on: http://localhost:8081/
