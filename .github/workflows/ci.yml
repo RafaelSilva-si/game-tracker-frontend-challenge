@@ -10,17 +10,3 @@ jobs:
         uses: cypress-io/github-action@v2
         with:
           start: yarn dev
-  
-  deploy:
-    runs-on: ubuntu-20.04
-    needs: [cypress-run]
-    if: ${{ needs.cypress-run.result == 'success' }}
-    steps:
-      - name: Install Vercel CLI
-        run: |
-          npm install -g vercel
-
-      - name: Deploy to Vercel
-        run: |
-          yarn build
-          vercel --prod
