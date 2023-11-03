@@ -2,7 +2,7 @@
 
 describe('Deals list Page', function(){
     beforeEach(function(){
-        cy.visit('http://127.0.0.1:5173/')
+        cy.visit('http://localhost:5173/')
     })
 
     it('Garantir que o input de Pesquisa esteja funcionando corretamente', function(){
