@@ -57,7 +57,7 @@ describe('Deals list Page', function(){
         })
     })
 
-    it.only('Garantir que o botão "ver mais" funcione corretamente', function(){
+    it('Garantir que o botão "ver mais" funcione corretamente', function(){
         cy.get('.moreButton').should('be.visible').click()
         cy.get('li[class="card"]').should('have.length.greaterThan', 12)
     })

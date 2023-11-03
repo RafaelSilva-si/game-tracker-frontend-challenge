@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview",
-    "cy:open": "cypress open --config-file=cypress.config.ts --spec=cypress/e2e/*.spec.ts",
+    "cy:open": "cypress open",
     "test": "cypress run"
   },
   "dependencies": {
@@ -18,7 +18,7 @@
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.2.3",
-    "cypress": "^13.4.0",
+    "cypress": "^9.5.1",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-prettier": "^5.0.1",
     "prettier": "^3.0.3",
